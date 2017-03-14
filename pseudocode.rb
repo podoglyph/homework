@@ -3,7 +3,7 @@
 # What’s the (next-)most trivial possible case? (Identify the next small-picture goal)
 # How do we achieve this goal? (Sketch an algorithm using pseudocode)
 
-#pseudocode
+#pseudocode homework
 
 1. The problem is solved when the program is tested and meets all criteria.
 2. This would be a text input box with a submit button.
