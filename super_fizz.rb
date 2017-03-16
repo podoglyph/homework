@@ -1,23 +1,15 @@
 #SuperFizzBuzz
 
-numbers = (0..1000).to_a
+#NOTE: instead of using a bunch of && operators connected to a completed string, build a string based on individual sets of conditions.
 
-numbers.each do |number|
-  if number % 3 == 0 && number == 0 % 5 && number % 7 == 0
-    puts "SuperFizzBuzz"
-  elsif number % 3 == 0 && number % 7 == 0
-    puts "SuperFizz"
-  elsif number % 5 == 0 && number % 7 == 0
-    puts "SuperBuzz"
-  elsif number % 3 == 0 && number % 5 == 0
-    puts "FizzBuzz"
-  elsif number % 3 == 0
-    puts "Fizz"
-  elsif number % 5 == 0
-    puts "Buzz"
-  elsif number % 7 == 0
-    puts "Super"
-  else
-    puts number
+def burger_shack_special
+  (0..1000).each do |number|
+    output = ""
+    output += "Super" if(number % 7 == 0)
+    output += "Fizz" if(number % 3 == 0)
+    output += "Buzz" if(number % 5 == 0)
+    puts (output.empty? ? number : output);
   end
 end
+
+burger_shack_special()
