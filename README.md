@@ -1,4 +1,4 @@
 # homework
-Turing homework
+Turing Homework
 
-Various homeword assignments for Mod-1 BEE.
+Various assignments for Mod-1 BEE.
