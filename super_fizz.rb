@@ -8,7 +8,7 @@ def burger_shack_special
     output += "Super" if(number % 7 == 0)
     output += "Fizz" if(number % 3 == 0)
     output += "Buzz" if(number % 5 == 0)
-    puts (output.empty? ? number : output);
+    puts (output.empty? ? number : output)
   end
 end
 
