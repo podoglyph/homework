@@ -2,7 +2,7 @@ require 'pry'
 
 class Calculator
 
-  attr_accessor :sum, :value
+  attr_accessor :sum
   
   def initialize
     @sum = 0
