@@ -2,11 +2,10 @@ require 'pry'
 
 class Calculator
 
-  attr_reader :sum, :value
+  attr_accessor :sum, :value
   
-  def initialize()
+  def initialize
     @sum = 0
-    @value = value
   end
 
   def total
@@ -15,14 +14,16 @@ class Calculator
   
   def add(value)
     @sum += value
+    self
   end
 
   def subtract(value)
     @sum -= value
+    self
   end
   
   def clear
     @sum = 0
   end
-
+  #binding.pry
 end
